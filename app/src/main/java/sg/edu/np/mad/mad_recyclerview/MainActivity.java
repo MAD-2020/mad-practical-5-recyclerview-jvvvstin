@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+        showNewEntry(recyclerView, taskList);
         EditText taskEditText = (EditText) findViewById(R.id.taskEditText);
         String newTask = taskEditText.getText().toString();
         taskList.add(newTask);
